@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BookService } from '../book.service';
+import { BookService } from './services/book.service';
 import { Address } from './Address';
 
 @Component({
@@ -9,8 +9,7 @@ import { Address } from './Address';
 })
 export class BookComponent implements OnInit {
 
-
-  addresses: Address[];
+  public addresses: Address[];
 
   constructor(private service: BookService) { }
 
