@@ -2,7 +2,6 @@
 
 export class Address {
 
-    codePostal: string;
-    nomCommune: string;
+    constructor(public codePostal: string, public commune: string) { }
 
 }
